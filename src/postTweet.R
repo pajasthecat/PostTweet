@@ -1,3 +1,4 @@
+options(repos = "https://mran.microsoft.com")
 # Installing packages ------------------------------------------------------------------
 
 if (!require('twitteR')) install.packages("twitteR")
