@@ -1,8 +1,13 @@
 # Installing packages ------------------------------------------------------------------
 
 if (!require('twitteR')) install.packages("twitteR")
+if (!require('jsonlite')) install.packages('jsonlite')
+
+library('twitteR')
+library('rjson')
 
 # Set API Keys ---------------------------------------------------
+credentials_file = "credentials.json"
 credentials <- fromJSON(file=credentials_file)
 
 api_key <- credentials$twitter$consumer_key
