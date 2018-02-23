@@ -3,9 +3,11 @@ options(repos = "https://mran.microsoft.com")
 
 if (!require('twitteR')) install.packages("twitteR")
 if (!require('jsonlite')) install.packages('jsonlite')
+if (!require('rjson')) install.packages("rjson")
 
 library('twitteR')
 library('rjson')
+library('jsonlite')
 
 # Set API Keys ---------------------------------------------------
 credentials_file = "credentials.json"
