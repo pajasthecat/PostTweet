@@ -1,10 +1,13 @@
 # Installing packages ------------------------------------------------------------------
 
-if (!require('twitteR')) install.packages("twitteR")
-if (!require('jsonlite')) install.packages('jsonlite')
-
-library('twitteR')
+if (!require('httr')) install.packages("httr", repos = "http://cran.us.r-project.org")
+if (!require('jsonlite')) install.packages("jsonlite", repos = "http://cran.us.r-project.org")
+if (!require('twitteR')) install.packages("twitteR", repos = "http://cran.us.r-project.org")
+if (!require('rjson')) install.packages("rjson", repos = "http://cran.us.r-project.org")
 library('rjson')
+library('twitteR')
+library('httr')
+library('jsonlite')
 
 # Set API Keys ---------------------------------------------------
 credentials_file = "credentials.json"
